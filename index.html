@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desgin focused, software engineer.">
+  <title>Gaelle Michel - Software Engineer & Designer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+  <link rel="shortcurt icon" type="image/png" href="assets/sparkles.png" sizes="32x32" />
+  <link rel="stylesheet" href="styles.css"/>
+
+</head>
+
+<body>
+
+<!-- Scroll Top Button -->
+<div class="scroll-top">
+    <i class="fa-solid fa-sort-up"></i>
+</div>
+
+
+<header>
+  <!-- <a href="" class="brand">mchldsgn</a> -->
+  <div class="menu">
+    <div class="btn">
+      <i class="fas fa-times close-btn"></i>
+    </div>
+      <a href="./index.html#hero"class="header-link-1">Home</a>
+      <a href="./index.html#projects"class="header-link-2">Work</a>
+      <a href="./index.html#about"class="header-link-3">About</a>
+      <a href="./index.html#contact"class="header-link-4">Contact</a>
+  </div>
+
+  <div class="btn">
+    <i class="fas fa-bars menu-btn"></i>
+  </div>
+</header>  
+
+
+<!-- Hero section -->
+<section id="hero">
+    <div class="container">
+      <div class="left">
+        <p class="subheading">Hi there,</p>
+        <h2 class="heading">
+          <div class="wrapper"><span>I'm Gaelle</span></div>
+        </h2>
+        <div class="desc">
+            <b>HR Professional</b> by day,
+              <div class="slidingVertical">
+                <span><a href="#about" class="link-btn-2">software engineer</a></span>
+                <span><a href="#about" class="link-btn-4">designer</a></span>
+                <span><a href="#about" class="link-btn-5">casual gamer</a></span>
+                <span><a href="#about" class="link-btn-6">period piece enthusiast</a></span>
+                <span><a href="#about" class="link-btn-7">lover of cute things</a></span><br>
+                <b>by night,</b> with a passion for all things technology <br> and design.<br>
+              </div>
+              
+            <br>
+
+           <span>Have a look at my latest <a href="#projects" class="link-btn-1">projects</a>
+            or <a href="#contact" class="link-btn-3">connect</a></span> !
+        </div>
+         
+        <div class="buttons">
+          <a href="https://www.linkedin.com/in/gsmichel/"target="_blank" class="primary-btn-1"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/mchldsgn" target="_blank" class="primary-btn-2"><i class="fa-brands fa-square-github"></i></a>
+          <a href="#contact" class="primary-btn-3"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+       <div class="right">
+        <img src="assets/room.png" alt="3d isometric cozy room"> 
+      </div> 
+    </div>
+</section>
+
+
+
+ <!-- Projects Section -->   
+<section id="projects">
+    <div class="container">
+        <h2 class="section-heading-1">Work</h2>
+            <div class="main">
+
+        
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('website')"> Websites</button>
+          <button class="btn" onclick="filterSelection('design')"> Design</button>
+          <button class="btn" onclick="filterSelection('fun')"> Tomoki & Friends</button>
+        </div>
+        
+        <!-- Project Grid -->
+        <div class="row">
+          <div class="column website">
+            <div class="content">
+              <a href="https://mchldsgn.github.io/GemTours--Miami/" target="_blank">
+              <img src="/assets/gemtours.png" alt="GemTours" style="width:100%">
+              <h4>GemTours</h4></a>
+              <!-- <p>
+                Redesigned Scrimba Hometown Homepage project. Conducted competitive analysis, created prototype,
+                UI design system and developed a tour and travel agency page.<br><br> -->
+                <!-- <h4><font color="red">🚧Site reponsiveness under construction🏗️</font></h4> -->
+              <!-- </p> -->
+            </div>
+          </div>
+
+          <div class="column website">
+            <div class="content">
+            <a href="https://mchldsgn.github.io/Portfolio-V1/" target="_blank">
+            <img src="/assets/portfolio1.png" alt="mchldsgn" style="width:100%">
+              <h4>Portfolio V.1</h4></a>
+              <!-- <p>Single-paged, macaron themed responsive portfolio page built
+                from scratch using HTML, CSS + JS.</p> -->
+            </div>
+          </div>
+          
+          <div class="column website">
+            <div class="content">
+              <a href="https://vgmichel.github.io/poppi-landing-spw/index.html" target="_blank">
+              <img src="/assets/poppi.png" alt="Poppi" style="width:100%">
+              <h4>POPPI</h4></a>
+              <!-- <p>Lead the concept design, branding/brand identity, packaging and character development for an eCommerce brand featuring original anime characters.
+                (Collaborated with another software engineer to create a mock website).</p> -->
+            </div>
+          </div>
+
+          <div class="column fun">
+            <div class="content">
+            <a href="https://mchldsgn.github.io/Tomoki-Memory-Matcher/" target="_blank">
+            <img src="/assets/tomoki1.png" alt="Car" style="width:100%">
+            <h4>Memory Matcher</h4></a>
+            <!-- <p>Let's help find Tomoki's friends! </p> -->
+            </div>
+          </div>
+
+          <div class="column fun">
+            <div class="content">
+            <a href="https://mchldsgn.github.io/Tomoki-Calculator/" target="_blank">
+            <img src="/assets/tomoki2.png" alt="Car" style="width:100%">
+            <h4>Math Helper</h4></a>
+            <!-- <p>Add, subtract and divide with Tomoki!  </p> -->
+            </div>
+          </div>
+
+          <div class="column fun">
+            <div class="content">
+            <a href="https://mchldsgn.github.io/Tomoki-Ticking-Timer/#" target="_blank">
+            <img src="/assets/tomoki3.png" alt="Car" style="width:100%">
+              <h4>Ticking Timer</h4></a>
+              <!-- <p>Keep track of time with Tomoki! </p> -->
+            </div>
+          </div>
+        
+          <div class="column design">
+            <div class="content">
+              <img src="/assets/siola.png" alt="SIOLA" style="width:100%">
+              <h4>SIOLA</h4>
+              <!-- <p>Lorem ipsum dolor..</p> -->
+            </div>
+          </div>
+
+          <div class="column design">
+            <div class="content">
+              <img src="/assets/moodish.png" alt="moodish" style="width:100%">
+              <h4>moodish</h4>
+              <!-- <p>Lorem ipsum dolor..</p> -->
+            </div>
+          </div>
+
+          <div class="column website">
+            <div class="content">
+              <img src="/assets/jost-2.png" alt="moodish" style="width:100%">
+              <h4>Jost</h4>
+              <!-- <p>Lorem ipsum dolor..</p> -->
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        <!-- END MAIN -->
+        </div>
+    </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-heading-2">About</h2>
+      <div class="wrapper">
+        <div class="left">
+          <div class="card">
+            <p class="card-desc"> 
+                I'm a self-taught software engineer and designer,
+                with a background in studio and traditional art.
+                Though, my professional career is in healthcare business and administration,
+                I've always been drawn to tech and design. At the moment,
+                I'm pursuing my BS in Software Engineering from  Western Governors University.<br><br> 
+
+                Other than coding, I spend  my free time reading, 
+                spending time with family or gaming for the day.<br><br>
+                </p>
+                
+                 <!-- Text Animation -->
+                <h2 class="sentence">Currently learning
+                  <div class="slidingVertical">
+                    <span>CSS animations.</span>
+                    <span>foundations of IT support.</span>
+                    <span>Spline.</span>
+                    <span>3D design.</span>
+                    <span>more Javascript.</span>
+                  </div>
+                </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Contact Section -->
+ <section id="contact">
+    <div class="container">
+      <h2 class="section-heading-3" data-outline="contact">Contact</h2>
+      <div class="wrapper">
+        <div class="left">
+          <h2 class="contact-heading">Let's Connect</h2>
+          <p class="contact-desc">Have a project in mind or want to say hi? Feel free to send me a message or connect through LinkedIn.<br><br></p>
+
+
+          <div class="social-info">
+            <ul>
+              <!-- <li><a href="mailto:gsmichel0@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                </a></li> -->
+              <li><a href="https://github.com/mchldsgn" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                </a></li>
+              <li><a href="https://www.linkedin.com/in/gsmichel/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="right">
+          <div class="form-wrapper">
+            <form action="https://formsubmit.co/gsmichel0@gmail.com" method="post" class="contact-content" autocomplete="off" target="_blank">
+              <input type="hidden" name="_subject" value="New submission from mchldsgn!">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <div class="input-wrapper">
+                  
+                  <input type="text" id="name" name="name" placeholder="Nick Fury">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                  
+                  <input type="text" id="email" name="email" placeholder="nfury@shieldus.gov">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+  
+                <textarea type="text" id="message" name="message" placeholder="Type your message here."></textarea>
+  
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer Section -->
+<div class="footer">
+  <p>Built <a href="https://www.youtube.com/watch?v=8sJlnTMOpGM" target="_blank"><b>From Florida With </b></a>
+    <span class="pulse">🖤</span> by <a href="https://www.linkedin.com/in/gsmichel/" target="_blank"> <b>Gaelle</b></a><br>
+    © 2023. mchldsgn. All Rights Reserved.</p>
+</div>
+
+<script src="https://kit.fontawesome.com/09d0ae3c01.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+
+      
+</body>
+</html>
