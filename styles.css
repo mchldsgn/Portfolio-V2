@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
 	padding: 0;
@@ -123,7 +122,7 @@ header{
 }
   
 header.sticky{
-	background-color: #c50e1a;	padding: 15px 100px;
+	background-color: #000000;	padding: 15px 100px;
 	background: rgba(255, 255, 255, 0.199);
 	-webkit-backdrop-filter: saturate(180%) blur(25px);
 	backdrop-filter: saturate(180%) blur(25px);
@@ -663,6 +662,36 @@ h1 {
   
 .btn.active {
 	color: #A41DE8;
+}
+
+
+@media only screen and (max-width: 768px) {
+	#projects .myBtnContainer .img {
+		flex-direction: column;
+	}
+	#projects .myBtnContainer .left {
+		width: 100%;
+	}
+	#projects .content .right {
+		margin-left: 0;
+		width: 90%;
+		margin-top: -150px;
+	}
+	#projects .item:nth-of-type(even) {
+		flex-direction: column;
+	}
+	#projects .item:nth-of-type(even) .left {
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#projects .item .right .buttons {
+		flex-direction: column;
+	}
+	#projects .item .right .buttons a {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 
