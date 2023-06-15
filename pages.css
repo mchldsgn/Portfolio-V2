@@ -212,20 +212,32 @@ header .menu a{
     font-size: 1.5rem;
 }
 
+h1  {
+    display: flex;
+	justify-content: center;
+    flex-direction: row;
+    height: 10vh;
+	margin: 0 auto;
+	/* max-width: 1000px; */
+	padding: 1rem 0 1rem 0;
+    font-size: 3rem;
+}
+
 .skills, .live-btn {
     display: flex;
     flex-direction: row;
+	justify-content: center;
     width: 70vw;
 	margin: 0 auto;
 	/* max-width: 1000px; */
     font-size: 1.5rem;
-    padding-top: 3rem;
+    padding: 1rem 0 1rem 0;
 }
 
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
 	width: 70vw;
     padding-top: 6rem;
@@ -247,6 +259,15 @@ header .menu a{
     font-weight: 500;
 }
 
+.concept-1 {
+	text-align: center;
+    line-break: auto;
+    /* line-height: 35px; */
+    padding: 10px 0 10px 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+
 .blurb {
     line-break: auto;
     /* line-height: 35px; */
@@ -255,10 +276,21 @@ header .menu a{
     font-weight: 500;
 }
 
+.blurb-1 {
+	text-align: center;
+    line-break: auto;
+    /* line-height: 35px; */
+    padding: 1rem 0 8rem 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
 .friendcard {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+	padding: 2rem 0 2rem 0;
 }
 
 .friendcard img{
@@ -281,7 +313,7 @@ header .menu a{
 
 .giftext:hover ~ .gif {
     display: block;
-    position: absolute;
+    /* position: absolute; */
     z-index: 2
 }
 
@@ -311,10 +343,12 @@ button{
     font-weight: 900;
 }
 .notice{
+	font-size: 1.5rem;
     display: flex;
     width: 100%;
     justify-content: center;
-    padding-top: 5rem;
+	align-items: center;
+    padding: 5rem 0 5rem 0;
 }
 
 /* Footer */
