@@ -13,13 +13,14 @@ body {
     background-color: rgb(255, 255, 255);
 }
 a, a:link, a:hover {
-    /* color: #ffffff; */
+    /* color: black; */
     text-decoration: none;
 }
 
 /* a:visited {
     color: #ffffff;
 } */
+
 
 ::-webkit-scrollbar {
     width: 20px;
@@ -116,10 +117,6 @@ header .menu a{
 	transition-property: color, background;
 }
   
-/* header .menu a:hover{
-	color: #A41DE8;
-	transition: 0.5s;
-} */
 
 .header-link-1:hover{
 	color: #ffae00;
@@ -215,7 +212,7 @@ header .menu a{
     font-size: 1.5rem;
 }
 
-.skills {
+.skills, .live-btn {
     display: flex;
     flex-direction: row;
     width: 70vw;
@@ -299,25 +296,21 @@ button{
     padding: 15px;
     font-size: 15px;
     font-family: inherit;
-    font-weight: 900;
+    font-weight: 500;
     background-color: #000000;
-    border: 1px solid black;
     border: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-
+.app-btn a:visited {
+    color: #ffffff;
+}
 
 .app-btn:hover {
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
-    border: 1px solid black;
-    transition: 0.5s;
+    font-weight: 900;
 }
-
-
 .notice{
-
     display: flex;
     width: 100%;
     justify-content: center;
@@ -366,7 +359,7 @@ button{
   margin: 0 auto;
   padding: 35px;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color:black;
   font-weight: 700;
   font-size: 15px;
   font-family: inherit;
@@ -376,4 +369,8 @@ button{
 .footer a:hover {
   color: #367900;
   transition: 0.5s ease;
+}
+
+.footer a:visited {
+    color: #000000;
 }
