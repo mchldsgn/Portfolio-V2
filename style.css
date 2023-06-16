@@ -54,8 +54,6 @@ a, a:link, a:visited, a:hover {
 	bottom: 10px;
 	right: 10px;
 	border-radius: 10px;
-	/* box-shadow: 0px 0px 10px rgba(22, 22, 22, 0.226); */
-	/* hover effect default */
 	transform: scale(0.9);
 	transition: 0.3s ease-in-out transform;
 	/* for centering the icon */
@@ -161,10 +159,7 @@ header .menu a{
 	transition-property: color, background;
 }
   
-/* header .menu a:hover{
-	color: #A41DE8;
-	transition: 0.5s;
-} */
+
 
 .header-link-1:hover{
 	color: #ffae00;
@@ -275,7 +270,6 @@ header .menu a{
 
 .gt-info img {
 	width: 75%;
-	/* padding: 4rem 0 4rem 0; */
 }
 
 .container {
@@ -377,8 +371,6 @@ h1 {
 }
      
 .footer a:hover {
-	/* color: #ECC3FF; */
-    /* -webkit-transition: all 1s ease; */
 	background: linear-gradient(to left, #1ABCFE 20%, #FF41CA 40%, #FF41CA 60%, #1ABCFE 80%);
     -webkit-background-clip: text;
     background-clip: text;
