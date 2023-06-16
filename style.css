@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+    
+::-webkit-scrollbar {
+    background: none !important;
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color:#1f1f1f;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	color: #1f1f1f;
+	text-decoration: none;
+}
+
+
+a, a:link, a:visited, a:hover {
+    color: #000000;
+}
+
+
+/* scroll Top/Up Button */
+.scroll-top {
+	z-index: 100;
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 10px;
+	/* box-shadow: 0px 0px 10px rgba(22, 22, 22, 0.226); */
+	/* hover effect default */
+	transform: scale(0.9);
+	transition: 0.3s ease-in-out transform;
+	/* for centering the icon */
+	/* display: flex; */
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.scroll-top:hover {
+	color:#000000 ;
+	transform: scale(1);
+}
+
+
+/*Section Headers*/
+.section-heading {
+	font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 900;
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.2rem;
+	position: relative;
+	margin-bottom: 5rem;
+	font-family: inherit;
+}
+.section-heading-1 {
+	font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 900;
+	color: #A41DE8;
+    position: relative;
+	margin-bottom: 3rem;
+
+}
+.section-heading-2 {
+	font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 900;
+	color: #FF41CA;
+    position: relative;
+	margin-bottom: 3rem;
+}
+
+
+.section-heading-3 {
+	font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 900;
+	color: #1ABCFE;
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+
+/* Navigation */
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+	z-index: 999;
+	transition: 0.6s;
+	font-family: inherit;
+}
+  
+header.sticky{
+	background-color: #000000;	padding: 15px 100px;
+	background: rgba(255, 255, 255, 0.199);
+	-webkit-backdrop-filter: saturate(180%) blur(25px);
+	backdrop-filter: saturate(180%) blur(25px);
+	font-family: inherit;
+}
+  
+header .brand{
+	font-size: 20px;
+	color: #000000;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-family: inherit;
+}
+  
+header .menu{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+header .menu a{
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #000000;
+	margin: 0 30px;
+	padding: 5px 15px;
+	/* text-transform: uppercase; */
+	border-radius: 15px;
+	transition: 0.3s;
+	transition-property: color, background;
+}
+  
+/* header .menu a:hover{
+	color: #A41DE8;
+	transition: 0.5s;
+} */
+
+.header-link-1:hover{
+	color: #ffae00;
+	transition: 0.5s;
+	font-weight: 900;
+}
+
+.header-link-2:hover{
+	color: #A41DE8;
+	transition: 0.5s;
+	font-weight: 900;
+}
+
+.header-link-3:hover{
+	color: #FF41CA;
+	transition: 0.5s;
+	font-weight: 900;
+}
+
+.header-link-4:hover{
+	color: #1ABCFE;
+	transition: 0.5s;
+	font-weight: 900;
+}
+
+
+header .btn{
+	font-size: 25px;
+	cursor: pointer;
+	color: #000000;
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	header .btn{
+	  display: block;
+}
+  
+	header .menu.active{
+	  right: 0;
+}
+  
+header .menu{
+	position: fixed;
+	background: #a81b24;
+	flex-direction: column;
+	min-width: 400px;
+	height: 100vh;
+	top: 0;
+	right: -100%;
+	padding: 80px 50px;
+	transition-property: right;
+	transition: 0.5s;
+}
+  
+header .menu .close-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 25px;
+}
+  
+header .menu a{
+	display: block;
+	font-size: 16px;
+	margin: 20px;
+	padding: 0 15px;
+	}
+}
+  
+@media (max-width: 580px) {
+	.section-main h1{
+	  font-size: 50px;
+	  line-height: 60px;
+	}
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 60vh;
+}
+
+.title img {
+	width: 25%;
+}
+
+
+.gt-info p {
+	text-align: center;
+	line-break: auto;
+	/* line-height: 35px; */
+	padding: 10px 0 10px 0;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.gt-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;	
+}
+
+.gt-info img {
+	width: 75%;
+	/* padding: 4rem 0 4rem 0; */
+}
+
+.container {
+	display: flex;
+    flex-direction: row;
+    width: 70vw;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    font-size: 1.5rem;
+}
+
+
+h1 {
+	padding-top: 5rem;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70vw;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.links a{
+	color: #ffffff;
+}
+
+.app-btn {
+    display: flex;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 500;
+    background-color: #000000;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.app-btn:hover {
+    font-weight: 900;
+}
+
+/* Footer */
+
+.pulse {
+	-webkit-animation: pulse 2.5s infinite;
+  animation: pulse 2.5s infinite;
+  display: inline-block;
+}
+
+@keyframes pulse {
+0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+	
+14% {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+28% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+42% {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+70% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	}
+}
+
+.footer {
+	width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 15px;
+}
+  
+.footer a {
+	color: #000;
+}
+     
+.footer a:hover {
+	/* color: #ECC3FF; */
+    /* -webkit-transition: all 1s ease; */
+	background: linear-gradient(to left, #1ABCFE 20%, #FF41CA 40%, #FF41CA 60%, #1ABCFE 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+
+    transition: mask-position 1.5s ease,-webkit-mask-position 1.5s ease;
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+    opacity: 1;
+}
