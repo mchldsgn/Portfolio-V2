@@ -32,8 +32,8 @@ a, a:link, a:visited, a:hover {
 
 
 img {
-	width: 100%;
-	height: 100%;
+	width: 120%;
+	height: 120%;
 }
 a {
 	color: #1f1f1f;
@@ -335,12 +335,12 @@ header .menu a{
 
 #hero .right img {
 	/* width: 100%;
-	max-width: 450px;
-	height: 450px; */
-	object-fit: cover;
-	object-position: 50% 30%;
-	border-radius: 50px;
-	animation: fade 0.6s ease-in forwards;
+	max-width: 600px;
+	height: 500px;
+	object-fit: contain;
+	object-position: 50% 30%; */
+	/* border-radius: 50px; */
+	animation: fade 1s ease-in forwards;
 }
 
 @media only screen and (max-width: 768px) {
