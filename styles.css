@@ -12,6 +12,7 @@ html {
 body {
     background-color: rgb(255, 255, 255);
 }
+
 a, a:link, a:visited, a:hover {
     color: #000;
 }
@@ -189,21 +190,21 @@ header .menu a {
 }
 
 
-header .btn{
+header .btn {
 	font-size: 25px;
 	cursor: pointer;
 	color: #000000;
 	display: none;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
-	header .btn{
+	header .btn {
 	  display: block;
-	  padding: 15px;
 }
   
 	header .menu.active{
-	  right: 0;
+	  right: 0; 
 }
   
 header .menu {
@@ -221,10 +222,12 @@ header .menu {
 }
   
 header .menu .close-btn {
-	position: absolute;
-	top: 0;
-	left: 0;
 	margin: 25px;
+}
+
+header .menu-btn:active {
+	position: absolute;
+	/* visibility: hidden; */
 }
   
 header .menu a {
@@ -337,12 +340,6 @@ header .menu a {
 }
 
 #hero .right img {
-	/* width: 100%;
-	max-width: 100px;
-	height: 500px;
-	object-fit: contain;
-	object-position: 50% 30%;
-	border-radius: 50px; */
 	animation: fade 1s ease-in forwards;
 }
 
@@ -379,171 +376,6 @@ header .menu a {
 	}
 }
 
-
-/*Text Animation Links*/
-
-/* .link-btn-1 {
-	display: inline-block;
-	color: #9d00e6;
-    font-weight: 800;
-}
-
-.link-btn-1:hover {
-    font-weight: 800;
-	background-color: #8100eb;
-    background-image: linear-gradient(60deg, #9d00e6, #0004dd);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    transition: 0.5s;
-}
-
-.link-btn-2 {
-	display: inline-block;
-	color: #9d00e6;
-    font-weight: 800;
-    font-weight: 800;
-    background: linear-gradient(65deg, #1ABCFE 15%, #FF41CA 35%, #9D76E1 60%, #6cd2fa 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-
-    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    -webkit-mask-size: 800%;
-    mask-size: 800%;
-    -webkit-mask-position: 0;
-    mask-position: 0;
-}
-
-.link-btn-2:hover {
-    background: linear-gradient(to left, #1ABCFE 20%, #FF41CA 40%, #FF41CA 60%, #1ABCFE 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-
-    transition: mask-position 1.5s ease,-webkit-mask-position 1.5s ease;
-    -webkit-mask-position: 120%;
-    mask-position: 120%;
-    opacity: 1;
-}
-
-
-.link-btn-3 {
-	display: inline-block;
-	color: #1ABCFE;
-    font-weight: 800;
-}
-
-.link-btn-3:hover {
-    font-weight: 800;
-	background-color: #8100eb;
-    background-image: linear-gradient(60deg, #0004dd, #1ABCFE);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    transition: 0.5s;
-}
-
-
-.link-btn-4 {
-	display: inline-block;
-	color: #9d00e6;
-    font-weight: 800;
-    font-weight: 800;
-    background: linear-gradient(65deg, #91C800 15%, #bbee3a 35%, #d2ee8a 60%, #FF9402 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-
-    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    -webkit-mask-size: 800%;
-    mask-size: 800%;
-    -webkit-mask-position: 0;
-    mask-position: 0;
-}
-
-
-.link-btn-5 {
-	display: inline-block;
-	color: #9d00e6;
-    font-weight: 800;
-    font-weight: 800;
-    background: linear-gradient(65deg, #FF9402 15%, #fda223 35%, #ffcf8c 60%, #91C800 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-
-    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    -webkit-mask-size: 800%;
-    mask-size: 800%;
-    -webkit-mask-position: 0;
-    mask-position: 0;
-}
-
-.link-btn-6 {
-	display: inline-block;
-	color: #9d00e6;
-    font-weight: 800;
-    font-weight: 800;
-    background: linear-gradient(65deg, #da0000 15%, #ff02c0 35%, #ff9101 60%, #ff02c0 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-
-    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    -webkit-mask-size: 800%;
-    mask-size: 800%;
-    -webkit-mask-position: 0;
-    mask-position: 0;
-}
-
-.link-btn-7 {
-	display: inline-block;
-	color: #9d00e6;
-    font-weight: 800;
-    font-weight: 800;
-    background: linear-gradient(65deg, #ff02c0 15%, #ffb2e8 35%, #6adbdf 60%, #e3b1ff 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-
-    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
-    -webkit-mask-size: 800%;
-    mask-size: 800%;
-    -webkit-mask-position: 0;
-    mask-position: 0;
-}
-
-
-@keyframes textShine {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-} */
 
 .link-btn-1,
 .link-btn-2,
@@ -797,7 +629,7 @@ h1 {
 	font-size: 20px;
 	border: none;
 	padding: 12px 30px;
-	background-color: white;
+	background-color: transparent;
 	cursor: pointer;
 	font-family: inherit;
 }
