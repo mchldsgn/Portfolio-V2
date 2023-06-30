@@ -194,6 +194,61 @@ header .menu a{
 	}
 }
 
+/* Responsive */  
+
+@media (max-width: 580px) {
+	.section-main h1{
+	  font-size: 50px;
+	  line-height: 60px;
+	}
+}
+
+@media (max-width: 1024px) {
+	header .btn {
+	  display: block;
+}
+  
+	header .menu.active{
+	  right: 0; 
+}
+  
+header .menu {
+	position: fixed;
+	font-size: 16px;
+	background: #999999;
+	flex-direction: column;
+	min-width: 500px;
+	height: 100vh;
+	top: 0;
+	right: -100%;
+	padding: 80px 50px;
+	transition-property: right;
+	transition: 0.5s;
+}
+  
+header .menu .close-btn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 25px;
+}
+  
+header .menu a {
+	display: block;
+	font-size: 16px;
+	margin: 20px;
+	padding: 0 15px;
+	}
+}
+  
+@media (max-width: 580px) {
+	.section-main h1{
+	  font-size: 50px;
+	  line-height: 60px;
+	}
+}
+
+
 
 .title {
     display: flex;
@@ -205,26 +260,76 @@ header .menu a{
 
 .title img {
 	width:40%;
+	max-width: 100%;
 }
 
 .container  {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+    flex-direction: column;
     width: 70vw;
-	margin: 0 auto;
-	/* max-width: 1000px; */
+    margin: 0 auto;
     font-size: 1.5rem;
 }
 
 h1  {
     display: flex;
-	justify-content: center;
+    justify-content: center;
     flex-direction: row;
-    height: 10vh;
-	margin: 0 auto;
-	/* max-width: 1000px; */
-	padding: 1rem 0 1rem 0;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem 0;
     font-size: 3rem;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .container {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        height: 30vh;
+    }
+
+    .title img {
+        width: 60%;
+    }
+
+    .container {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        height: 20vh;
+    }
+
+    .title img {
+        width: 80%;
+    }
+
+    .container {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 .skills, .live-btn {
@@ -289,6 +394,44 @@ h1  {
     font-weight: 500;
 }
 
+/* Responsive */
+
+@media (max-width: 1200px) {
+    .projects {
+        grid-gap: 60px;
+    }
+
+    .concept-1 {
+        font-size: 25px;
+    }
+
+    .blurb-1 {
+        font-size: 25px;
+        padding-bottom: 6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .projects {
+        grid-template-columns: 1fr;
+        width: 90vw;
+        grid-gap: 40px;
+        padding-top: 4rem;
+    }
+
+    .concept-1,
+    .blurb-1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .concept-1,
+    .blurb-1 {
+        font-size: 18px;
+    }
+}
+
 
 .friendcard {
     display: flex;
@@ -300,7 +443,9 @@ h1  {
 .friendcard img{
     width: 10%;
 }
-.gif {
+
+
+/* .gif {
     display: none;
 }
   
@@ -317,9 +462,9 @@ h1  {
 
 .giftext:hover ~ .gif {
     display: block;
-    /* position: absolute; */
+    position: absolute;
     z-index: 2
-}
+} */
 
 button{
     color: white;
