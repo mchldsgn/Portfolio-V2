@@ -33,8 +33,9 @@ a, a:link, a:visited, a:hover {
 
 img {
 	width: 120%;
-	height: 120%;
+    /* height: 120%; */
 }
+
 a {
 	color: #1f1f1f;
 	text-decoration: none;
@@ -121,31 +122,31 @@ header{
 	font-family: inherit;
 }
   
-header.sticky{
+header.sticky {
 	background-color: #000000;	padding: 15px 100px;
-	background: rgba(255, 255, 255, 0.199);
-	-webkit-backdrop-filter: saturate(180%) blur(25px);
-	backdrop-filter: saturate(180%) blur(25px);
+	background: rgba(255, 255, 255, 0.048);
+	-webkit-backdrop-filter: saturate(100%) blur(5px);
+	backdrop-filter: saturate(100%) blur(5px);
 	font-family: inherit;
 }
   
-header .brand{
+/* header .brand{
 	font-size: 20px;
 	color: #000000;
 	font-weight: 700;
 	text-decoration: none;
 	letter-spacing: 2px;
 	font-family: inherit;
-}
+} */
   
-header .menu{
+header .menu {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
   
-header .menu a{
+header .menu a {
 	font-size: 16px;
 	font-weight: 600;
 	text-decoration: none;
@@ -198,15 +199,17 @@ header .btn{
 @media (max-width: 1024px) {
 	header .btn{
 	  display: block;
+	  padding: 15px;
 }
   
 	header .menu.active{
 	  right: 0;
 }
   
-header .menu{
+header .menu {
 	position: fixed;
-	background: #a81b24;
+	font-size: 16px;
+	background: #999999;
 	flex-direction: column;
 	min-width: 400px;
 	height: 100vh;
@@ -224,7 +227,7 @@ header .menu .close-btn {
 	margin: 25px;
 }
   
-header .menu a{
+header .menu a {
 	display: block;
 	font-size: 16px;
 	margin: 20px;
@@ -335,55 +338,51 @@ header .menu a{
 
 #hero .right img {
 	/* width: 100%;
-	max-width: 600px;
+	max-width: 100px;
 	height: 500px;
 	object-fit: contain;
-	object-position: 50% 30%; */
-	/* border-radius: 50px; */
+	object-position: 50% 30%;
+	border-radius: 50px; */
 	animation: fade 1s ease-in forwards;
 }
 
+/* Responsive */
+
 @media only screen and (max-width: 768px) {
-	html {
-        font-size: 3rem;
- 	}
 	#hero .container {
+		padding: 15px 0 15px 0;
+		display: flex;
 		flex-direction: column-reverse;
 	}
-	#hero .container .right {
-		flex: 1;
+	
+	#hero .container .left {
 		margin-bottom: 2rem;
 	}
-	#hero .container .left {
-		padding-right: 0;
-		flex: 1;
-		height: fit-content;
-	}
-	#hero .left .buttons {
-		justify-content: center;
-	}
-	#hero .left .heading {
-		font-size: 4rem;
-		margin: 0 auto;
-	}
-	#hero .container .left .desc {
-		margin: 0 auto;
-		margin-top: 2rem;
-	}
+
 	#hero .right img {
-		width: 100%;
-		height: 400px;
+		max-width: 100%;
 	}
 }
-@media only screen and (max-width: 950px) {
-	#hero .container .right {
-		flex: 6;
+
+@media only screen and (max-width: 480px) {
+	#hero .left .heading {
+		font-size: 3rem;
+	}
+
+	#hero .left .desc {
+		font-size: 20px;
+		line-height: 32px;
+	}
+
+	#hero .right img {
+		max-width: 50px;
 	}
 }
+
 
 /*Text Animation Links*/
 
-.link-btn-1 {
+/* .link-btn-1 {
 	display: inline-block;
 	color: #9d00e6;
     font-weight: 800;
@@ -544,8 +543,117 @@ header .menu a{
     100% {
         background-position: 100% 50%;
     }
+} */
+
+.link-btn-1,
+.link-btn-2,
+.link-btn-3,
+.link-btn-4,
+.link-btn-5,
+.link-btn-6,
+.link-btn-7,
+.primary-btn-1,
+.primary-btn-2,
+.primary-btn-3 {
+	display: inline-block;
+	color: #9d00e6;
+	font-weight: 800;
 }
 
+.link-btn-1:hover,
+.link-btn-2:hover,
+.link-btn-3:hover,
+.link-btn-4:hover,
+.link-btn-5:hover,
+.link-btn-6:hover,
+.link-btn-7:hover,
+.primary-btn-1:hover,
+.primary-btn-2:hover,
+.primary-btn-3:hover {
+	font-weight: 800;
+	transition: 0.5s;
+}
+
+.link-btn-2,
+.link-btn-4,
+.link-btn-5,
+.link-btn-6,
+.link-btn-7 {
+	background: linear-gradient(65deg, #1ABCFE 15%, #FF41CA 35%, #9D76E1 60%, #6cd2fa 80%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 500% auto;
+	animation: textShine 5s ease-in-out infinite alternate;
+	-webkit-mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, .2) 50%, #000 75%);
+	mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, .2) 50%, #000 75%);
+	-webkit-mask-size: 800%;
+	mask-size: 800%;
+	-webkit-mask-position: 0;
+	mask-position: 0;
+}
+
+.link-btn-2:hover,
+.link-btn-4:hover,
+.link-btn-5:hover,
+.link-btn-6:hover,
+.link-btn-7:hover {
+	background: linear-gradient(to left, #1ABCFE 20%, #FF41CA 40%, #FF41CA 60%, #1ABCFE 80%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 500% auto;
+	animation: textShine 5s ease-in-out infinite alternate;
+	transition: mask-position 1.5s ease, -webkit-mask-position 1.5s ease;
+	-webkit-mask-position: 120%;
+	mask-position: 120%;
+	opacity: 1;
+}
+
+.link-btn-1,
+.link-btn-3 {
+	display: inline-block;
+	color: #9d00e6;
+	font-weight: 800;
+}
+
+.link-btn-1:hover,
+.link-btn-3:hover {
+	font-weight: 800;
+	transition: 0.5s;
+	background-color: #8100eb;
+	background-image: linear-gradient(60deg, #0004dd, #1ABCFE);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+@keyframes textShine {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+	.buttons {
+		flex-direction: column;
+		gap: 1rem;
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.buttons {
+		font-size: 1.5rem;
+	}
+}
 
 /*Social buttons*/
 
@@ -584,6 +692,21 @@ header .menu a{
 	transition: 0.5s;
 }
 
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+	.buttons {
+		flex-wrap: wrap;
+		gap: 1rem;
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.buttons {
+		font-size: 1.5rem;
+	}
+}
 
  /* Projects */
 
@@ -625,6 +748,30 @@ h1 {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+	.main {
+		padding: 10px;
+		border-radius: 20px;
+	}
+
+	.column {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.main {
+		padding: 5px;
+		border-radius: 10px;
+	}
+
+	.column {
+		width: 100%;
+	}
 }
   
   /* Content */
