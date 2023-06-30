@@ -155,7 +155,6 @@ header .menu a {
 	margin: 0 30px;
 	padding: 5px 15px;
 	/* text-transform: uppercase; */
-	border-radius: 15px;
 	transition: 0.3s;
 	transition-property: color, background;
 }
@@ -212,7 +211,7 @@ header .menu {
 	font-size: 16px;
 	background: #999999;
 	flex-direction: column;
-	min-width: 400px;
+	min-width: 500px;
 	height: 100vh;
 	top: 0;
 	right: -100%;
@@ -250,7 +249,6 @@ header .menu a {
     display: flex;
 	height: 100vh;
 	width: 100%;
-	/* padding-top: 10rem; */
 }
 
 .container {
@@ -338,12 +336,6 @@ header .menu a {
 }
 
 #hero .right img {
-	/* width: 100%;
-	max-width: 100px;
-	height: 500px;
-	object-fit: contain;
-	object-position: 50% 30%;
-	border-radius: 50px; */
 	animation: fade 1s ease-in forwards;
 }
 
