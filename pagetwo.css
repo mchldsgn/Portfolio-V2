@@ -339,20 +339,29 @@ header .menu a {
 }
 
 .section img {
-	width: 30%;
+	width: 100%;
 	transition: 0.5s;
 	animation-delay: 0.1s;
     padding-top: 15px;
 }
 
 
-.pp-brand, .pp-assets {
+.pp-brand {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 3rem;
     /* flex-wrap: wrap; */
+}
+
+
+.pp-assets  {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 4px;
 }
 
 .fadein {
