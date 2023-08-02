@@ -758,7 +758,7 @@ h1 {
 /* Mobile devices */
 @media only screen and (max-width: 767px) {
 	#about {
-		padding: 10px; /* Adjust padding for smaller screens */
+		padding: 1rem; /* Adjust padding for smaller screens */
 	}
 
 	.card-desc {
