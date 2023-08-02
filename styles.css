@@ -244,9 +244,9 @@ header .btn {
 
 /* Hero Section */
 #hero {
-    display: flex;
 	height: 100vh;
-	width: 100%;
+    width: 100%;
+    padding-top: 10rem;
 }
 
 .container {
@@ -257,8 +257,8 @@ header .btn {
 
 #hero .container {
 	display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 
 }
 #hero .container .left {
@@ -331,6 +331,12 @@ header .btn {
 }
 
 #hero .right img {
+	width: 100%;
+	max-width: 450px;
+	height: 450px;
+	object-fit: fill;
+	object-position: 50% 30%;
+	border-radius: 50px;
 	animation: fade 1s ease-in forwards;
 }
 
@@ -338,7 +344,6 @@ header .btn {
 	html {
  	}
 	#hero .container {
-		display: flex;
 		flex-direction: column-reverse;
 	}
 	#hero .container .right {
@@ -365,14 +370,15 @@ header .btn {
 	}
 	#hero .right img {
 		width: 100%;
-		/* height: 400px; */
+		height: 400px;
 	}
 }
 @media only screen and (max-width: 950px) {
 	#hero .container .right {
-		flex: 1;
+		flex: 6;
 	}
 }
+
 
 
 
