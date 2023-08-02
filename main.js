@@ -1,3 +1,7 @@
+const hamburgerMenu = document.querySelector('#navigation .nav-icon');
+const navContent = document.querySelector('#nav-content');
+const closeNavButton = document.querySelector('#nav-content .close-btn');
+const navLinks = document.querySelectorAll('#nav-content nav ul li a');
 const scrollButton = document.querySelector(".scroll-top");
 
 // Scroll TOP Button Events
@@ -15,27 +19,21 @@ if(scrollButton){
   });
 }
 
-
-
-//Javascript for Navigation effect on scroll
-window.addEventListener("scroll", function(){
-  var header = document.querySelector("header");
-  header.classList.toggle('sticky', window.scrollY > 0);
+// Hamburger Menu events
+hamburgerMenu.addEventListener('click', ()=>{
+  navContent.classList.add('show');
+  document.body.style.overflow="hidden";
 });
-
-//Javascript for responsive navigation sidebar Nav
-var menu = document.querySelector('.menu');
-var menuBtn = document.querySelector('.menu-btn');
-var closeBtn = document.querySelector('.close-btn');
-
-menuBtn.addEventListener("click", () => {
-  menu.classList.add('active');
+closeNavButton.addEventListener('click', ()=>{
+  navContent.classList.remove('show');
+  document.body.style.overflow="initial";
 });
-
-closeBtn.addEventListener("click", () => {
-  menu.classList.remove('active');
-});
-
+navLinks.forEach( link => {
+  link.addEventListener('click', ()=> {
+    navContent.classList.remove('show');
+    document.body.style.overflow="initial";
+  })
+})
 
 
 // Project Filter
