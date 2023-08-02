@@ -211,7 +211,7 @@ header .menu {
 	font-size: 16px;
 	background: #999999;
 	flex-direction: column;
-	min-width: 500px;
+	/* min-width: 500px; */
 	height: 100vh;
 	top: 0;
 	right: -100%;
@@ -753,6 +753,28 @@ h1 {
 	100% { opacity: 0; }
 }
 
+/* Media Queries for responsiveness */
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+	#about {
+		padding: 10px; /* Adjust padding for smaller screens */
+	}
+
+	.card-desc {
+		font-size: 1rem; /* Decrease font size for better readability on mobile */
+	}
+
+	.slidingVertical {
+		text-align: center; /* Center the text on mobile */
+	}
+
+	.slidingVertical span {
+		position: static; /* Remove absolute positioning on mobile */
+		animation: none; /* Disable animation on mobile for better performance */
+		background: none; /* Remove gradient background on mobile */
+	}
+}
 
 
 /* Contact Section */
