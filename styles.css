@@ -334,10 +334,10 @@ header .btn {
 	width: 100%;
 	max-width: 450px;
 	height: 450px;
-	object-fit: fill;
+	object-fit: cover;
 	object-position: 50% 30%;
 	border-radius: 50px;
-	animation: fade 1s ease-in forwards;
+	animation: fade 0.6s ease-in forwards;
 }
 
 @media only screen and (max-width: 768px) {
