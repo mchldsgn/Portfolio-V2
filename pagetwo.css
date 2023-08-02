@@ -351,7 +351,7 @@ header .menu a {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 3rem;
+	/* padding: 3rem; */
     /* flex-wrap: wrap; */
 }
 
@@ -362,6 +362,7 @@ header .menu a {
 	grid-template-rows: repeat(2, 1fr);
 	grid-column-gap: 20px;
 	grid-row-gap: 4px;
+	padding-top: 3rem;
 }
 
 .fadein {
