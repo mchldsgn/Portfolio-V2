@@ -224,10 +224,10 @@ a, a:link, a:visited, a:hover {
 	position: absolute;
 	left: 10px;
 	top: 10px;
-	color: white;
+	color: rgb(216, 29, 23);
 	width: 40px;
 	height: 40px;
-	background-color: #6cd2fa;
+	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -235,6 +235,7 @@ a, a:link, a:visited, a:hover {
 	transition: 0.3s ease background-color;
 }
 #nav-content .close-btn:hover {
+	color:white;
 	background-color: rgb(216, 29, 23);
 	cursor: pointer;
 }
